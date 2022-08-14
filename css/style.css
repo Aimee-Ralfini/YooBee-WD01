@@ -1,0 +1,142 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url(./flex.css);
+@import url(./grid.css);
+
+
+
+/* --------GLOBAL-------- */
+* {
+    margin: 0;
+  }
+
+  body{
+    background-color: rgb(11, 0, 54);
+    margin: 0 auto;
+    font-family: 'Figtree', sans-serif;
+}
+
+.wrapper {
+    /* background-color: darkorchid; */
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+ section{
+    /* background-color: pink; */
+    flex: 1;
+  }
+
+/* --------TYPOGRAPHY-------- */
+
+h1{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgb(4, 39, 0);  
+}
+
+h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+h3{
+    font-weight: 800;
+    font-size: 17px;
+    margin-top:10px;
+}
+
+h3::first-line {
+    margin-top:10px;
+  }
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top:10px;
+}
+
+p::first-line {
+    margin-top:10px;
+  }
+
+/* --------LINKS-------- */
+
+/* unvisited link */
+a:link {
+    color:rgb(4, 39, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+
+  }
+  
+  /* visited link */
+  a:visited {
+    color:rgb(209, 0, 0);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #5101c8;
+  }
+  
+  /* selected link */
+ a:active {
+    color: #ffffff;
+  }
+
+
+/* --------NAV-------- */
+
+header {
+    background-color: rgb(230, 230, 222);
+    min-height: auto;
+     }
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+  }
+
+nav a:link {
+    color:rgb(4, 39, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 10px;
+  }
+  
+  nav a:visited {
+    color:rgb(209, 0, 0);
+  }
+  
+  nav a:hover {
+    color: #5101c8;
+  }
+  
+  nav a:active {
+    color: #ffffff;
+  }
+
+/* --------FOOTER-------- */
+
+footer{
+    background-color: rgb(230, 230, 222);
+    /* position: sticky; */
+    bottom: 0;
+}
+
+footer div{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
